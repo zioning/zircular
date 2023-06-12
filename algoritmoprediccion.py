@@ -18,7 +18,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split, GridSearchCV, RandomizedSearchCV
 from xgboost.sklearn import XGBRegressor # wrapper
 X=data[['voltaje1', 'corriente1','voltaje2', 'corriente2','voltaje3', 'corriente3','frecuencia','kg','factor','thdv1','thdv2','thdv3','thdi1','thdi2','thdi3','cn']]
-y=data['kw3']
+y=data['kw3','CO2','PM']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, # 30% for the evaluation set
                                             random_state = 42)
 # evaluation metric: rmspe
