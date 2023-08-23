@@ -198,9 +198,9 @@ void setup_wifi()
  */
 
 const char *mqtt_server = "zioning.ml";
-const int mqtt_port = 1883;
+const int mqtt_port = ****;
 const char *mqtt_user = "web_client";
-const char *mqtt_pass = "121212";
+const char *mqtt_pass = "****";
 
 unsigned long tiempo;
 unsigned long tiempoReconnect;
